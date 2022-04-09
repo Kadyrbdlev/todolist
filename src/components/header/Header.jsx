@@ -1,6 +1,10 @@
+import css from "./Header.module.css"
 
-export default function Header() {
+
+export default function Header(props) {
   return (
-    <div>Header</div>
+    <div className={css.wrapper}>
+      Header ({props.count})
+      </div>
   )
 }
